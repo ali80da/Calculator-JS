@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- ICON -->
+    <link rel="stylesheet" href="./Main.css">
+</head>
+<body>    
+    <!-- START Calculator -->
+    <section id="Calculator">
+        <div class="container">
+            <form name="Form" onsubmit="getResult()">
+                <div class="Calculator">
+                    <!-- START Section -->
+                    <div class="Result-Section">
+                        <!-- Process -->
+                        <input type="text" class="Result-Value" value="12321" name="resultValue">
+                        <!-- Result -->
+                        <input type="text" class="Result-Input" value="111*111" name="resultInput">
+                    </div>
+                    <!--  -->
+                    <div class="Buttons-Section">
+                        <div class="row">
+                            <!--  -->
+                            <div class="btn" onclick="resetInput()">
+                                C
+                            </div>
+                            <!-- BACK -->
+                            <div class="btn" onclick="handleBackspace()">
+                                <span class="material-icon backspace">B</span>
+                            </div>
+
+                            <!-- ROW 1 -->
+                            <div class="btn" onclick="calc('%')">%</div>
+                            <div class="btn" onclick="calc('/')">/</div>
+
+                        </div>
+
+                        <!-- ROW 2 -->
+                            <div class="row">
+                                <div class="btn" onclick="calc('7')">7</div>
+                                <div class="btn" onclick="calc('8')">8</div>
+                                <div class="btn" onclick="calc('9')">9</div>
+                                <div class="btn" onclick="calc('*')">
+                                    <span style="margin-bottom: 4px;">x</span>
+                                </div>
+                            </div>
+
+                            <!-- ROW 3 -->
+                            <div class="row">
+                                <div class="btn" onclick="calc('4')">4</div>
+                                <div class="btn" onclick="calc('5')">5</div>
+                                <div class="btn" onclick="calc('6')">6</div>
+                                <div class="btn" onclick="calc('-')">
+                                    <span style="margin-bottom: 4px;">-</span>
+                                </div>
+                            </div>
+
+                            <!-- ROW 4 -->
+                            <div class="row">
+                                <div class="btn" onclick="calc('1')">1</div>
+                                <div class="btn" onclick="calc('2')">2</div>
+                                <div class="btn" onclick="calc('3')">3</div>
+                                <div class="btn" onclick="calc('+')">
+                                    <span style="margin-bottom: 4px;">+</span>
+                                </div>
+                            </div>
+
+                            <!-- ROW 5 -->
+                            <div class="row">
+                                <div class="btn" onclick="calc('0')">0</div>
+                                <div class="btn" onclick="calc('.')">.</div>
+                                <div class="btn equals" onclick="getResult()">=</div>
+                            </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- SCRIPTS -->
+    <script src="./Main.js"></script>
+</body>
+</html>

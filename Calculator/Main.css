@@ -1,0 +1,211 @@
+/* STYLES *//* ME-ZONE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #506F71;
+    height: 100vh;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.Calculator {
+    position: relative;
+    width: 300px;
+    min-height: 500px;
+    margin-left: -330px;
+    box-shadow: 0 0 100px #3336;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Calculator > .Result-Section {
+    position: relative;
+    background: #FFFFFF35;
+    height: 124px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Calculator > .Result-Section input {
+    position: absolute;
+    width: calc(100% - 20px);
+    background: transparent;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 0;
+    text-align: right;
+    padding: 10px;
+    outline: 0;
+    border-radius: 5px; 
+    pointer-events: none;
+}
+
+.Calculator > .Result-Section .Result-Value {
+
+    font-size: 2.1rem;
+    top: 60px;
+}
+
+.Calculator > .Result-Section .Result-Input {
+
+    font-size: 1.1rem;
+    top: 20px;
+}
+
+
+.Calculator > .Buttons-Section {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    font-size: 1.5rem;
+    bottom: 0;
+}
+
+.Calculator > .Buttons-Section .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 5px 20px;
+    /* margin-bottom: 20px; */
+
+}
+
+
+.Calculator .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    background: #FFFFFF36;
+    color: white;
+    border-radius: 5px;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.Calculator .btn:hover {
+    box-shadow: 0 2px 20px #506F71;
+    transition: all .3s ease;
+}
+
+.Calculator .btn:active {
+    box-shadow: 0 2px 30px #506F71;
+    transition: all .3s ease;
+}
+
+.Calculator .Backspace {
+    font-size: 20px;
+    margin: 0 2px 0 0;
+}
+
+
+
+
+
+
+
+
+
+.equals {
+    width: 120px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
